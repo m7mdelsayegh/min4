@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <title> وزارة الصحه والسكان - اللقاح للاطقم الطبية</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="nav"> <img src="https://egcovac.mohp.gov.eg/assets/images/logo-ar-black.svg" alt="">
+        <a id="an1"
+            href="https://api.whatsapp.com/send?phone=%2B201553105105&fbclid=IwAR2MWEYBIOPiGe2sukV2Cr4zjw94ga067gRiPLSG7-7JjINjOYhdqp-8obc"
+            target="_blank" title="تواصل معنا عبر واتساب">تواصل معنا</a>
+    </nav>
+    <br> <br>
+    <form action="PROJECT_PAGE6.HTML" method="POST" id="form">
+        <span id="p1"> برجاء ملئ الملفات والتأكد من صحتها </span><br><br>
+        <label for="name">اكتب اسمك كاملا</label><br> 
+        <input type="text" checked id="name" name="nam" required title="اكتب اسمك" placeholder="اكتب اسمك هنا كاملا"> <br> <br>
+
+        <label for="name">قم بادخال رقمك القومي</label><br>
+        <input type="text" id="name" name="numL" aria-required="true"
+            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..?)\../g, '$1');" required
+            title="رقمك القومي" placeholder="ادخل رقمك القومي"> <br> <br>
+
+        <label for="name">ادخل تاريخ ميلادك</label><br>
+        <input type="date" id="name" name="date" required title="تاريخ ميلادك" placeholder="ادخل تاريخ ميلادك"> <br> <br>
+
+        
+        <label for="name">ادخل رقم هاتفك</label><br>
+        <input type="text" id="name" aria-required="true" name="phon" maxlength="11" minlength="11"
+            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..?)\../g, '$1');" required
+            title="رقم هاتفك" placeholder="ادخل رقم هاتفك"> <br> <br>
+
+        <label for="govrs"> ادخل محافظتك</label><br>
+        <input list="govrs" id="govr" required name="govrs"> <br> <br>
+        <datalist id="govrs">
+            <option value="kafrelsheik"> كفر الشيخ</option>
+            <option value="alex"> الاسكندريه</option>
+            <option value="cairo">القاهرة</option>
+            <option value="souhag">سوهاج</option>
+            <option value="luxor">الاقصر</option>
+            <option value="aswan">اسوان</option>
+            <option value="behira">البحيره</option>
+            <option value="dakhalia">الدقهليه</option>
+            <option value="sharqia">الشرقيه</option>
+            <option value="gharbia">الغربيه</option>
+            <option value="bahrahmr">الحر الاحمر</option>
+            <option value="qena">قنا</option>
+            <option value="banisuef">بني سوسف</option>
+            <option value="sina">سيناء</option>
+            <option value="matrouh">مطروح</option>
+        </datalist>
+        <label for="govrs">  ادخل المحافظه التى تعمل بها حاليا</label><br>
+        <input list="govrsw" id="govrw" required name="govrsw">
+        <datalist id="govrsw">
+            <option value="kafrelsheik"> كفر الشيخ</option>
+            <option value="alex"> الاسكندريه</option>
+            <option value="cairo">القاهرة</option>
+            <option value="souhag">سوهاج</option>
+            <option value="luxor">الاقصر</option>
+            <option value="aswan">اسوان</option>
+            <option value="behira">البحيره</option>
+            <option value="dakhalia">الدقهليه</option>
+            <option value="sharqia">الشرقيه</option>
+            <option value="gharbia">الغربيه</option>
+            <option value="bahrahmr">الحر الاحمر</option>
+            <option value="qena">قنا</option>
+            <option value="banisuef">بني سوسف</option>
+            <option value="sina">سيناء</option>
+            <option value="matrouh">مطروح</option>
+        </datalist> <br><br>
+        <label for="hospit">اسم المستشفي التى تعمل بها ؟</label> <br>
+        <input type="text" required name="hos" id="hospit" placeholder="مكان عملك"> <br> <br>
+        <label>هل تعانى من مرض ما؟</label><br>
+        <input required type="radio" name="dises" id="dises">
+        <label for="dises" id="lab1" style="margin-left: 25px;">نعم</label>
+        <input required type="radio" name="dises" id="dises1">
+        <label for="dises1" id="lab1">لا</label><br> <br>
+        <label>ما هو جنسك؟</label><br>
+        <input required type="radio" name="dises" id="dises2">
+        <label for="dises2" id="lab1" style="margin-left: 25px;">ذكر</label>
+        <input required type="radio" name="dises" id="dises3">
+        <label for="dises3" id="lab1">انثي</label><br> <br>
+        
+        <label>خاص بالمرأة .. هل تمرين بفتره حمل؟</label><br>
+        <input   type="radio" name="dises" id="dises4">
+        <label for="dises" id="lab1" style="margin-left: 25px;">نعم</label>
+        <input type="radio" name="dises" id="dises5">
+        <label for="dises1" id="lab1">لا</label><br> <br>
+        <br>
+
+        <button type="submit" id="but"> ارسال </button> 
+        <input type="reset" value="اعاده تعيين">
+
+    </form>
+    <br> <br>
+    <div class="fotter">
+        <span> <bdi style="color :#141516; size: 20px;"> لمزيد من المعلومات تفضل بزيارة </bdi><a
+                href="https://www.facebook.com/egypt.mohp" target="_blank"
+                title="موقع وزارة الصحه والسكان - فيسبوك">موقعنا</a> </span> <br>
+        <p style="height: fit-content; text-align: left;">powered by <a href="https://www.facebook.com/profile.php?id=100038323982275"
+                target="_blank" style="color: black; size: 45px;"> mohammed el-sayegh</a></p>
+    </div>
+    
+</body>
+
+</html>
